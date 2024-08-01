@@ -103,7 +103,7 @@
   name: (_) @assignment.inner)
 
 ("->>"
-  value: (_) @assignment.inner @assignment.lhs
+  value: (_) @assignment.inner
   name: (_) @assignment.rhs) @assignment.outer
 
 (binary_operator
