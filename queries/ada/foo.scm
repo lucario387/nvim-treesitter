@@ -106,5 +106,5 @@
   value: (_) @assignment.inner @assignment.lhs
   name: (_) @assignment.rhs) @assignment.outer
 
-(binary_operator)
-  name: (_) @assignment.inner
+(binary_operator
+  name: (_) @assignment.inner)
