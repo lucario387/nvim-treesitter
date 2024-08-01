@@ -227,6 +227,7 @@ local format_queries = [[
     (list)
     (predicate)
     (grouping . (_))
+    (field_definition)
     "."
   ] @format.append-newline
   (_) .)
@@ -329,6 +330,7 @@ local function iter(bufnr, node, lines, q, level)
   local apply_newline = false
   for child, _ in node:iter_children() do
     local id = child:id()
+    vim.print(node:text())
     repeat
       if apply_newline then
         apply_newline = false
